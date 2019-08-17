@@ -1,6 +1,6 @@
 # flutte_ninghao_study
 
-A new Flutter application.
+宁浩网上 flutter 学习视频练习代码
 
 ## Getting Started
 

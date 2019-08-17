@@ -1,4 +1,4 @@
-# flutte_ninghao_study
+# 说明
 
 宁浩网上 flutter 学习视频练习代码
 

@@ -10,6 +10,13 @@ class LayoutDemo extends StatelessWidget{
         mainAxisAlignment: MainAxisAlignment.center,   // 主轴
 //        crossAxisAlignment: CrossAxisAlignment.stretch,     // 交叉轴
         children: <Widget>[
+
+          Stack(
+            children: <Widget>[
+
+            ],
+          ),
+
           SizedBox(
             width: 200,
             height: 200,

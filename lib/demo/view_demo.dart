@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../model/post.dart';
 
 class ViewDemo extends StatelessWidget{
-
   @override
   Widget build(BuildContext context) {
     return GridViewBuilderDemo();

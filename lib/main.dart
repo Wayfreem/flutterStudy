@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SliverDemo(),
+      home: Home(),
       theme: ThemeData(
         primarySwatch: Colors.yellow,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),   // 点击 tabBarView 时的背景颜色
@@ -57,8 +57,8 @@ class Home extends StatelessWidget {
             ListViewDemo(),
             // Icon(Icons.change_history, size: 120),
             BasicDemo(),
-            Icon(Icons.directions_bike, size: 120),
             ViewDemo(),
+            SliverDemo(),
           ]
         ),
         drawer: DrawerDemo(),

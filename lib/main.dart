@@ -13,7 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: NavigatorDemo(),
+//      home: NavigatorDemo(),
+      initialRoute: '/about',
+      routes: {
+        '/': (context) => NavigatorDemo(),
+        '/about': (context) => Page(title: 'about',)
+      },
       theme: ThemeData(
         primarySwatch: Colors.yellow,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),

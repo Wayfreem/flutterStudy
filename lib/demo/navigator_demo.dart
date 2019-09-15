@@ -5,20 +5,24 @@ class NavigatorDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Center(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          FlatButton(onPressed: null, child: Text('Home')),
-          FlatButton(
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => Page(
-                          title: 'About',
-                        )));
-              },
-              child: Text('about')),
-        ],
-      ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              FlatButton(onPressed: null, child: Text('Home')),
+              FlatButton(
+                  onPressed: () {
+                    /* 通过  Navigator.of(context).push() 的方式跳转路由
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) => Page(
+                              title: 'About',
+                            )));*/
+
+                    // 通过 main.dart 中设置的路由表跳转
+                    Navigator.pushNamed(context, 'about');
+                  },
+                  child: Text('about')),
+            ],
+        ),
     ));
   }
 }
